@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Spacetab\PagerfantaAdapt\Adapters;
+namespace Spacetab\PagerfantaAdapt;
 
 use Pagerfanta\Adapter\AdapterInterface;
 use PDO;
@@ -10,12 +10,12 @@ abstract class BasePdoAdapter implements AdapterInterface
     /**
      * @var \PDO
      */
-    protected $pdo;
+    protected PDO $pdo;
 
     /**
      * @var string
      */
-    protected $table;
+    protected string $table;
 
     /**
      * PaginatePdoAdapter constructor.

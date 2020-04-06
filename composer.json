@@ -1,6 +1,6 @@
 {
   "name": "spacetab-io/pagerfanta-adapt-php",
-  "description": "Pagination format for spacetab.io standards.",
+  "description": "Pagerfanta adapters.",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -10,11 +10,12 @@
     }
   ],
   "require": {
+    "php": ">=7.4",
     "ext-pdo": "*",
     "pagerfanta/pagerfanta": "^2.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8",
+    "phpunit/phpunit": "^9",
     "envms/fluentpdo": "^2.1",
     "phpstan/phpstan": "^0.12.5",
     "symfony/var-dumper": "^5.0"

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Spacetab\PagerfantaAdapt\Adapters;
+namespace Spacetab\PagerfantaAdapt;
 
 use PDO;
 

@@ -1,11 +1,10 @@
-Paginate Formatter For PHP
-==========================
+Pagerfanta Adapt PHP
+====================
 
 [![CircleCI](https://circleci.com/gh/spacetab-io/pagerfanta-adapt-php/tree/master.svg?style=svg)](https://circleci.com/gh/spacetab-io/pagerfanta-adapt-php/tree/master)
 [![codecov](https://codecov.io/gh/spacetab-io/pagerfanta-adapt-php/branch/master/graph/badge.svg)](https://codecov.io/gh/spacetab-io/pagerfanta-adapt-php)
 
-This a simple formatter based on [Pagerfanta](https://github.com/whiteoctober/Pagerfanta) library.
-Specially created for follow up corporate standards of pagination format.
+This a simple adapters for [Pagerfanta](https://github.com/whiteoctober/Pagerfanta) library.
 
 ## Installation
 
@@ -17,60 +16,24 @@ composer install spacetab-io/pagerfanta-adapt-php
 
 Basic:
 ```php
-use Pagerfanta\Adapter\ArrayAdapter;
+use Spacetab\PagerfantaAdapt\PaginatePdoAdapter;
 use Pagerfanta\Pagerfanta;
-use Spacetab\PagerfantaAdapt\PaginateFormatter;
 
-$adapter = new ArrayAdapter($array);
+$adapter = new PaginatePdoAdapter(new PDO('dsn'), 'tableName');
 $pagerfanta = new Pagerfanta($adapter);
-$paginate = new PaginateFormatter($pagerfanta);
 
-$paginate->format(); // returns formatted output.
-```
-
-Replace current page results from Pagerfanta:
-```php
-use Pagerfanta\Adapter\ArrayAdapter;
-use Pagerfanta\Pagerfanta;
-use Spacetab\PagerfantaAdapt\PaginateFormatter;
-
-$adapter = new ArrayAdapter($array);
-$pagerfanta = new Pagerfanta($adapter);
-$paginate = new PaginateFormatter($pagerfanta);
-
-$paginate->setItems($transformedModel)->format();
 ```
 
 ## Depends
 
-* \>= PHP 7.1
+* \>= PHP 7.4
 * Composer for install package
 
-## Additional adapters
+## Adapters list
 
-This package also add a new following adapters:
-
-*  `Spacetab\PagerfantaAdapt\Adapters\BasePdoAdapter.php`
-*  `Spacetab\PagerfantaAdapt\Adapters\FluentPdoAdapter.php`
-*  `Spacetab\PagerfantaAdapt\Adapters\PaginatePdoAdapter.php`
-
-## Output format
-
-```json
-{
-  "data": [{"foo": "bar"}],
-  "meta": {
-    "pagination": {
-      "total": 6,
-      "per_page": 1,
-      "current_page": 1,
-      "total_pages": 6,
-      "prev_page": null,
-      "next_page": 2
-    }
-  }
-}
-```
+*  `Spacetab\PagerfantaAdapt\BasePdoAdapter.php`
+*  `Spacetab\PagerfantaAdapt\FluentPdoAdapter.php`
+*  `Spacetab\PagerfantaAdapt\PaginatePdoAdapter.php`
 
 ## License
 

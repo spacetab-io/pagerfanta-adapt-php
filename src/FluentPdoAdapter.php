@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Spacetab\PagerfantaAdapt\Adapters;
+namespace Spacetab\PagerfantaAdapt;
 
 use Envms\FluentPDO\Queries\Select;
 use Pagerfanta\Adapter\AdapterInterface;
@@ -10,7 +10,7 @@ class FluentPdoAdapter implements AdapterInterface
     /**
      * @var \Envms\FluentPDO\Queries\Select
      */
-    private $select;
+    private Select $select;
 
     /**
      * FluentPdoAdapter constructor.
