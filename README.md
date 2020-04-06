@@ -19,7 +19,7 @@ Basic:
 ```php
 use Pagerfanta\Adapter\ArrayAdapter;
 use Pagerfanta\Pagerfanta;
-use Spacetab\PaginateFormatter\PaginateFormatter;
+use Spacetab\PagerfantaAdapt\PaginateFormatter;
 
 $adapter = new ArrayAdapter($array);
 $pagerfanta = new Pagerfanta($adapter);
@@ -32,7 +32,7 @@ Replace current page results from Pagerfanta:
 ```php
 use Pagerfanta\Adapter\ArrayAdapter;
 use Pagerfanta\Pagerfanta;
-use Spacetab\PaginateFormatter\PaginateFormatter;
+use Spacetab\PagerfantaAdapt\PaginateFormatter;
 
 $adapter = new ArrayAdapter($array);
 $pagerfanta = new Pagerfanta($adapter);
@@ -50,9 +50,9 @@ $paginate->setItems($transformedModel)->format();
 
 This package also add a new following adapters:
 
-*  `Spacetab\PaginateFormatter\Adapters\BasePdoAdapter.php`
-*  `Spacetab\PaginateFormatter\Adapters\FluentPdoAdapter.php`
-*  `Spacetab\PaginateFormatter\Adapters\PaginatePdoAdapter.php`
+*  `Spacetab\PagerfantaAdapt\Adapters\BasePdoAdapter.php`
+*  `Spacetab\PagerfantaAdapt\Adapters\FluentPdoAdapter.php`
+*  `Spacetab\PagerfantaAdapt\Adapters\PaginatePdoAdapter.php`
 
 ## Output format
 
