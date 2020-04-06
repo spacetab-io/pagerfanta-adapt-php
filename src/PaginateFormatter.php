@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Spacetab\PaginateFormatter;
+namespace Spacetab\PagerfantaAdapt;
 
 use Pagerfanta\Pagerfanta;
 
@@ -46,7 +46,7 @@ class PaginateFormatter implements PaginateFormatterInterface
 
     /**
      * @param array $meta
-     * @return \Spacetab\PaginateFormatter\PaginateFormatter
+     * @return \Spacetab\PagerfantaAdapt\PaginateFormatter
      */
     public function setMeta(array $meta)
     {

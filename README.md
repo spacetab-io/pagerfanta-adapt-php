@@ -1,8 +1,8 @@
 Paginate Formatter For PHP
 ==========================
 
-[![CircleCI](https://circleci.com/gh/spacetab-io/paginate-php/tree/master.svg?style=svg)](https://circleci.com/gh/spacetab-io/paginate-php/tree/master)
-[![codecov](https://codecov.io/gh/spacetab-io/paginate-php/branch/master/graph/badge.svg)](https://codecov.io/gh/spacetab-io/paginate-php)
+[![CircleCI](https://circleci.com/gh/spacetab-io/pagerfanta-adapt-php/tree/master.svg?style=svg)](https://circleci.com/gh/spacetab-io/pagerfanta-adapt-php/tree/master)
+[![codecov](https://codecov.io/gh/spacetab-io/pagerfanta-adapt-php/branch/master/graph/badge.svg)](https://codecov.io/gh/spacetab-io/pagerfanta-adapt-php)
 
 This a simple formatter based on [Pagerfanta](https://github.com/whiteoctober/Pagerfanta) library.
 Specially created for follow up corporate standards of pagination format.
@@ -10,7 +10,7 @@ Specially created for follow up corporate standards of pagination format.
 ## Installation
 
 ```bash
-composer install spacetab-io/paginate-php
+composer install spacetab-io/pagerfanta-adapt-php
 ```
 
 ## Usage

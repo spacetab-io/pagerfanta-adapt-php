@@ -2,14 +2,12 @@
 
 namespace Spacetab\Tests;
 
-use Spacetab\PaginateFormatter\Adapters\SqlAmphpAdapter;
 use Pagerfanta\Adapter\ArrayAdapter;
 use Pagerfanta\Pagerfanta;
-use Spacetab\PaginateFormatter\PaginateFormatter;
+use Spacetab\PagerfantaAdapt\PaginateFormatter;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use TypeError;
-use Amp\Postgres;
 
 class PaginateFormatterTest extends TestCase
 {

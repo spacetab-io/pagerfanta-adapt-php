@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Spacetab\PaginateFormatter\Adapters;
+namespace Spacetab\PagerfantaAdapt\Adapters;
 
 use Envms\FluentPDO\Queries\Select;
 use Pagerfanta\Adapter\AdapterInterface;

@@ -1,5 +1,5 @@
 {
-  "name": "spacetab-io/paginate-php",
+  "name": "spacetab-io/pagerfanta-adapt-php",
   "description": "Pagination format for spacetab.io standards.",
   "type": "library",
   "license": "MIT",
@@ -17,17 +17,16 @@
     "phpunit/phpunit": "^8",
     "envms/fluentpdo": "^2.1",
     "phpstan/phpstan": "^0.12.5",
-    "amphp/postgres": "^1.1",
     "symfony/var-dumper": "^5.0"
   },
   "autoload": {
     "psr-4": {
-      "Spacetab\\PaginateFormatter\\": "src"
+      "Spacetab\\PagerfantaAdapt\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Spacetab\\Tests\\PaginateFormatter\\": "src"
+      "Spacetab\\Tests\\PagerfantaAdapt\\": "src"
     }
   }
 }
