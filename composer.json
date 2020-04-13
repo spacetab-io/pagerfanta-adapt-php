@@ -1,5 +1,5 @@
 {
-  "name": "spacetab-io/pagerfanta-adapt-php",
+  "name": "spacetab-io/pagerfanta-adapt",
   "description": "Pagerfanta adapters.",
   "type": "library",
   "license": "MIT",
