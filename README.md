@@ -9,7 +9,7 @@ This a simple adapters for [Pagerfanta](https://github.com/whiteoctober/Pagerfan
 ## Installation
 
 ```bash
-composer install spacetab-io/pagerfanta-adapt-php
+composer require spacetab-io/pagerfanta-adapt
 ```
 
 ## Usage
